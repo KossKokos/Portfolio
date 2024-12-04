@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'portfolio/main.css' %}" />
     <title>Portfolio</title>
-</head>
-<body>
-    <h1>Hello, my name is {{ full_name }}</h1>
-</body>
+  </head>
+  <body>
+    <nav class="navigation">
+      <div>
+        <p id="full-name" class="page">Kostiantyn Pereimybida</p>
+      </div>
+      <div class="pages">
+        <a class="page" href="/home"> Home </a>
+        <a class="page" href="/about_us"> Projects </a>
+        <a class="page" href="/shop"> About </a>
+        <a class="page" href="/contact_us"> Contact </a>
+        <a class="page" href="/github"> GitHub </a>
+      </div>
+    </nav>
+  </body>
 </html>
