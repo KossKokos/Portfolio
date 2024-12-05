@@ -1,13 +1,14 @@
 
+const test_h1 = document.querySelector('h1');
+console.log(test_h1)
 
 
-document.addEventListener('DOMContentLoaded', function () {
+// document.addEventListener('DOMContentLoaded', function () {
     const header = document.querySelector('.header');
-    console.log(header)
     const nav = document.querySelector('.navigation');
-    console.log(nav)
     const navHeight = nav.getBoundingClientRect().height;
-  
+
+
     const stickyNav = function (entries) {
       const [entry] = entries;
       if (!entry.isIntersecting) nav.classList.add('sticky');
@@ -21,6 +22,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   
     headerObserver.observe(header);
+  // });
 
-
-  });
+    if (test_h1) {
+      test_h1.style.marginTop = `${navHeight}px`;
+    };
+  
