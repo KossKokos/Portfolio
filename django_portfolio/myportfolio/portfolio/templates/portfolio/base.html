@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'portfolio/main.css' %}" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navigation">
+        <div>
+          <p id="full-name" class="page">Kostiantyn Pereimybida</p>
+        </div>
+        <div class="pages">
+          <a class="page" href="{% url 'portfolio:index' %}"> Home </a>
+          <a class="page" href="{% url 'portfolio:projects' %}"> Projects </a>
+          <a class="page" href="{% url 'portfolio:about_me' %}"> About </a>
+          <a class="page" href="{% url 'portfolio:contact_me' %}"> Contact </a>
+          <a class="page" href="https://github.com/KossKokos" target="_blank">
+            <img
+              id="git-logo"
+              src="https://res.cloudinary.com/dtg29idor/image/upload/v1733415340/github-mark-white_rbeswr.png"
+            />
+            GitHub
+          </a>
+        </div>
+      </nav>
+    </header>
+    {% block content %} {% endblock %}
+    <script src="{% static 'portfolio/main.js' %}"></script>
+  </body>
+</html>

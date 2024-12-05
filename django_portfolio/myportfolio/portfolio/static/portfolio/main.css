@@ -5,19 +5,32 @@
   --color-primary-darker: #81b29a;
 }
 
+/* Reset default margins and padding */
+html,
 body {
-  margin-top: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a {
+body {
+  background-color: rgb(56, 52, 52);
+}
+
+a,
+p,
+h1,
+h2,
+li {
   text-decoration: none;
+  color: #f4f1de;
 }
 
 /* Navigation  */
 .navigation {
   top: 0; /* Stick to the top */
   z-index: 1000; /* Ensure it's above other elements */
-  background-color: #e07a5f;
+  background-color: rgb(94, 94, 94);
   display: flex;
   height: fit-content;
   width: 100%;
@@ -28,7 +41,6 @@ a {
 
 .navigation.sticky {
   position: fixed;
-  color: #e07a5f;
 }
 /* ---------------------- */
 .pages {
@@ -36,24 +48,24 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   flex: 1;
-  background-color: #e07a5f;
+  /* background-color: #e07a5f; */
   justify-content: end;
   align-items: baseline;
-  border-radius: 5px;
-  gap: 7.5px;
+  /* border-radius: 5px; */
+  gap: 0.3em;
   margin: 1rem;
 }
 /* ---------------------- */
 .page {
   background-color: transparent;
   border: none;
-  padding: 10px;
+  padding: 0.3em;
   color: #f4f1de;
   display: flex;
   position: relative;
-  gap: 5px;
+  gap: 0.2em;
   cursor: pointer;
-  border-radius: 4px;
+  /* border-radius: 4px; */
   transition: all 0.2s ease;
   font-size: large;
 }
@@ -86,3 +98,89 @@ a {
   opacity: 1;
 }
 /* ---------------------- */
+
+#git-logo {
+  height: fit-content;
+  width: 1em;
+}
+
+/* -------------- HOME PAGE ------------------- */
+#short-intro {
+  display: flex;
+  align-items: end;
+  padding: 1em;
+}
+
+#my-picture {
+  border-radius: 50%;
+  border-radius: 50%;
+  width: 10em;
+  margin-top: 10rem;
+  border-style: inset;
+}
+
+#short-skills {
+  padding-left: 1em;
+}
+
+#why-me {
+  text-align: center;
+  font-size: 2em;
+}
+
+#arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#arrow img {
+  width: 2em;
+  padding-bottom: 4em;
+}
+
+#visualization {
+  padding: 1rem;
+}
+
+#examples {
+  display: grid; /* Use CSS Grid for layout */
+  /* grid-template-columns: repeat(2, 1fr);  4 columns of equal width */
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 0.5rem; /* Space between images */
+  justify-content: center;
+}
+
+.box-img-example {
+  border: black;
+  border-style: groove;
+  object-fit: cover;
+  border-radius: 3%;
+}
+
+.img-example {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.example-title {
+  text-align: center;
+}
+
+.show-image {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 60rem;
+  background-color: #f3f3f3;
+  padding: 5rem 6rem;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.5s;
+}
+
+.hidden {
+  display: none;
+}

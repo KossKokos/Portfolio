@@ -1,30 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'portfolio/main.css' %}" />
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <header class="header">
-    <nav class="navigation">
-      <div>
-        <p id="full-name" class="page">Kostiantyn Pereimybida</p>
-      </div>
-      <div class="pages">
-        <a class="page" href="{% url 'portfolio:index' %}"> Home </a>
-        <a class="page" href="{% url 'portfolio:projects' %}"> Projects </a>
-        <a class="page" href="{% url 'portfolio:about_me' %}"> About </a>
-        <a class="page" href="{% url 'portfolio:contact_me' %}"> Contact </a>
-        <a class="page" href="https://github.com/KossKokos" target="_blank"> GitHub </a>
-      </div>
-    </nav>
-  </header>
-    {% block content %}
+{% extends "portfolio/base.html" %} {% block content %}
 
-    {% endblock %}
-    <script src=" {% static 'portfolio/main.js' %}"></script>
-  </body>
-</html>
+<div id="main-box">
+  <div id="introduction">
+    <div id="short-intro">
+      <img
+        id="my-picture"
+        src="https://res.cloudinary.com/dtg29idor/image/upload/v1733417394/photo_fhz60k.jpg"
+      />
+      <div id="short-skills">
+        <h2>Junior Data Scientist</h2>
+        <ul>
+          <li>Model Creating🛠️</li>
+          <li>Data Visualization👁️</li>
+          <li>Data Cleaning🧹</li>
+          <li>Data Analysis🔬</li>
+        </ul>
+      </div>
+    </div>
+    <!-- <div id="why-me"> -->
+    <h1 id="why-me">Why me?</h1>
+    <div id="arrow">
+      <img
+        src="https://res.cloudinary.com/dtg29idor/image/upload/e_background_removal/f_png/v1733418962/arrow_down_suzc81.jpg"
+      />
+    </div>
+    <div id="visualization">
+      <div id="examples">
+        {% for image in examples %}
+        <div class="box-img-example">
+          <p class="example-title">{{image.title}}</p>
+          <button class="open-image" type="button">
+            <img class="img-example" src="{{ image.url }}" />
+            <div class="show-image hidden">
+              <img src="{{ image.url }}" />
+            </div>
+          </button>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
