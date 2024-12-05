@@ -5,12 +5,18 @@
   --color-primary-darker: #81b29a;
 }
 
+body {
+  margin-top: 0;
+}
+
 a {
   text-decoration: none;
 }
 
 /* Navigation  */
 .navigation {
+  top: 0; /* Stick to the top */
+  z-index: 1000; /* Ensure it's above other elements */
   background-color: #e07a5f;
   display: flex;
   height: fit-content;
@@ -18,6 +24,11 @@ a {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.navigation.sticky {
+  position: fixed;
+  color: #e07a5f;
 }
 /* ---------------------- */
 .pages {
@@ -37,7 +48,7 @@ a {
   background-color: transparent;
   border: none;
   padding: 10px;
-  color: var(--color-secondary);
+  color: #f4f1de;
   display: flex;
   position: relative;
   gap: 5px;

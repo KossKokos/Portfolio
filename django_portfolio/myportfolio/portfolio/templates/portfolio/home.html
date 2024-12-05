@@ -8,17 +8,23 @@
     <title>Portfolio</title>
   </head>
   <body>
+    <script src=" {% static 'portfolio/main.js' %}"></script>
+    <header class="header">
     <nav class="navigation">
       <div>
         <p id="full-name" class="page">Kostiantyn Pereimybida</p>
       </div>
       <div class="pages">
-        <a class="page" href="/home"> Home </a>
-        <a class="page" href="/about_us"> Projects </a>
-        <a class="page" href="/shop"> About </a>
-        <a class="page" href="/contact_us"> Contact </a>
-        <a class="page" href="/github"> GitHub </a>
+        <a class="page" href="{% url 'portfolio:index' %}"> Home </a>
+        <a class="page" href="{% url 'portfolio:projects' %}"> Projects </a>
+        <a class="page" href="{% url 'portfolio:about_me' %}"> About </a>
+        <a class="page" href="{% url 'portfolio:contact_me' %}"> Contact </a>
+        <a class="page" href="https://github.com/KossKokos" target="_blank"> GitHub </a>
       </div>
     </nav>
+  </header>
+    {% block content %}
+
+    {% endblock %}
   </body>
 </html>
