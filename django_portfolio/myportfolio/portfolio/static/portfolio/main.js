@@ -4,7 +4,7 @@ const test_h1 = document.querySelector("h1");
 const header = document.querySelector(".header");
 const nav = document.querySelector(".navigation");
 const navHeight = nav.getBoundingClientRect().height;
-const showImageBtns = document.querySelectorAll('.show-image');
+// const showImageBtns = document.querySelectorAll('.show-image');
 
 
 const stickyNav = function (entries) {
@@ -27,21 +27,21 @@ if (test_h1) {
   test_h1.style.marginTop = `${test1Marging}rem`;
 }
 
-const openModal = function (e) {
-  e.preventDefault();
-  modal.classList.remove('hidden');
-  overlay.classList.remove('hidden');
-};
+// const openModal = function (e) {
+//   e.preventDefault();
+//   modal.classList.remove('hidden');
+//   overlay.classList.remove('hidden');
+// };
 
-const closeModal = function () {
-  modal.classList.add('hidden');
-  overlay.classList.add('hidden');
-};
+// const closeModal = function () {
+//   modal.classList.add('hidden');
+//   overlay.classList.add('hidden');
+// };
 
-btnsOpenModal.forEach(function (btn) {
-  btn.addEventListener('click', openModal);
-});
+// btnsOpenModal.forEach(function (btn) {
+//   btn.addEventListener('click', openModal);
+// });
 
-btnCloseModal.addEventListener('click', closeModal);
+// btnCloseModal.addEventListener('click', closeModal);
 
-showImageBtns.addEventListener()
+// showImageBtns.addEventListener()
