@@ -28,13 +28,22 @@
       <div id="examples">
         {% for image in examples %}
         <div class="box-img-example">
-          <p class="example-title">{{image.title}}</p>
-          <button class="open-image" type="button">
-            <img class="img-example" src="{{ image.url }}" />
-            <!-- <div class="show-image hidden">
-              <img src="{{ image.url }}" />
-            </div> -->
-          </button>
+          <!-- <button class="open-image" type="button"> -->
+          <div
+            class="project-image"
+            style="background-image: url('{{ image.url }}');"
+          ></div>
+          <h2 class="example-title">{{image.title}}</h2>
+          <div class="center">
+            <a href="{% url 'portfolio:projects' %}">
+              <button class="learn-more">
+                <span aria-hidden="true" class="circle">
+                  <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Learn More</span>
+              </button>
+            </a>
+          </div>
         </div>
         {% endfor %}
       </div>
