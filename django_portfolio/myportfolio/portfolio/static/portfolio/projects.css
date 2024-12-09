@@ -14,29 +14,27 @@
 #container-message-1 {
   display: flex;
 }
-/* 
-#container-message-2 {
-  display: flex;
-  justify-content: right;
-}
 
-#container-message-3 {
-  display: flex;
-} */
-/* #container-welcome {
-  display: flex;
-} */
 #main-container {
   padding-top: 5rem;
 }
 
 .introduction {
   padding: 0.5rem;
+  padding-bottom: 0;
+  padding-left: 2rem;
+}
+
+#container-message h1 {
+  margin: 1em;
+}
+#container-message div p {
+  margin: 1em;
 }
 /* ------------Internet Welcome-------------- */
 
 /* From Uiverse.io by SouravBandyopadhyay */
-.container-message {
+/* .container-message {
   display: flex;
   flex-direction: column;
   isolation: isolate;
@@ -140,4 +138,48 @@
   text-align: center;
   font-size: 0.9rem;
   width: 75%;
+} */
+
+/* ------------GIT LINK------------------- */
+.git-url {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-analyze-step h2,
+p {
+  white-space: pre-line;
+  padding-left: 1rem;
+  /* display: flex;
+  align-items: center; */
+}
+.code-snippet {
+  display: flex;
+  justify-content: right;
+  border-radius: 1rem;
+  border-style: none;
+  background-color: aliceblue;
+}
+
+.code-snippet pre code {
+  color: black;
+  white-space: pre-wrap;
+}
+
+/* ---------------LANGUAGES SNIPPETS----------------- */
+/***** Show language in code blocks *****/
+body pre[class^="language-"]::before {
+  font-family: var(--font-default);
+  color: var(--text-muted);
+  font-size: var(--font-smaller);
+  font-weight: var(--font-semibold);
+  position: absolute;
+  right: 0.5em;
+  top: 0.5em;
+}
+
+body pre[class~="language-py"]::before,
+body pre[class~="language-python"]::before {
+  content: "PYTHON";
 }

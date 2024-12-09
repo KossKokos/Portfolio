@@ -1,0 +1,49 @@
+#container-tables {
+  padding-top: 2rem;
+}
+
+#heading-qualifications {
+  text-align: center;
+}
+
+#qualifications-container {
+  width: min(500px, 100% - 3rem);
+  margin-inline: auto;
+}
+
+table {
+  background: #aba9a9;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+caption,
+th,
+td {
+  padding: 1rem;
+  color: white;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+caption {
+  background: hsl(0 0% 0%);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+th {
+  background: hsl(0 0% 0% / 0.5);
+}
+
+tr:nth-of-type(2n) {
+  background: hsl(0 0% 0% / 0.1);
+}
+
+.table-container {
+  max-width: 100%;
+  overflow-x: scroll;
+}
