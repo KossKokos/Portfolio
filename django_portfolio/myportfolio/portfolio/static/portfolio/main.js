@@ -1,11 +1,10 @@
-const test_h1 = document.querySelector("h1");
+// const test_h1 = document.querySelector("h1");
 
 // document.addEventListener('DOMContentLoaded', function () {
 const header = document.querySelector(".header");
 const nav = document.querySelector(".navigation");
 const navHeight = nav.getBoundingClientRect().height;
 // const showImageBtns = document.querySelectorAll('.show-image');
-
 
 const stickyNav = function (entries) {
   const [entry] = entries;
@@ -22,10 +21,10 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 headerObserver.observe(header);
 // });
 
-if (test_h1) {
-  const test1Marging = 0.0625 * navHeight;
-  test_h1.style.marginTop = `${test1Marging}rem`;
-}
+// if (test_h1) {
+//   const test1Marging = 0.0625 * navHeight;
+//   test_h1.style.marginTop = `${test1Marging}rem`;
+// }
 
 // const openModal = function (e) {
 //   e.preventDefault();

@@ -1,7 +1,36 @@
-{% extends "portfolio/base.html" %}
+{% extends "portfolio/base.html" %} {% block content %}
 
-{% block content %}
-
-<h1 style="color: black;">Projects</h1>
-
+<div id="container">
+  <div id="container-introduction">
+    <div id="container-welcome">
+      <!-- <h1 id="h1-welcome">Welcome to my Projects page</h1> -->
+      <div id="container-message-1" class="container-messages">
+        <div class="container-message">
+          <div class="notiglow"></div>
+          <div class="notiborderglow"></div>
+          <div class="notititle">Welcome To My Projects!</div>
+          <div class="notibody">
+            Here, you can investigate my own projects and team projects.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="main-container">
+    <div id="visualization">
+      <div id="examples" style="gap: 10rem">
+        {% for proj in examples %}
+        <div class="box-img-example">
+          <div
+            class="project-image"
+            style="background-image: url('{{ proj.url }}');"
+          ></div>
+          <h2 class="example-title">{{proj.title}}</h2>
+          <p class="introduction">{{proj.introduction}}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}

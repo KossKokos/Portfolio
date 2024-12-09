@@ -40,6 +40,29 @@ img_examples = [
     },
 ]
 
+projects_data = [
+    {
+        'url': 'https://res.cloudinary.com/dtg29idor/image/upload/v1733738120/car_plates_reader_cbgmgs.jpg',
+        'title': 'Plates-Reader-Project',
+        'introduction' : """The Car Parking application is a web-based app that automates parking management, 
+                            including optical license plate recognition and parking duration tracking. 
+                            It provides users with a convenient interface for viewing parking history 
+                            and offers administrators tools to manage accounts and rates. 
+                            The app simplifies the parking process and makes its management easier, 
+                            ensuring convenience for all users."""
+    },
+    {
+        'url': 'https://res.cloudinary.com/dtg29idor/image/upload/v1733740879/churn_predictions_gag4tv.png',
+        'title': 'Plates-Reader-Project',
+        'introduction' : """The Car Parking application is a web-based app that automates parking management, 
+                    including optical license plate recognition and parking duration tracking. 
+                    It provides users with a convenient interface for viewing parking history 
+                    and offers administrators tools to manage accounts and rates. 
+                    The app simplifies the parking process and makes its management easier, 
+                    ensuring convenience for all users."""
+    },
+]
+
 def get_html_file(name):
     template = loader.get_template(name)
     return template
@@ -56,7 +79,7 @@ def index(request):
 
 def projects(request):
     template = get_html_file('portfolio/projects.html')
-    data = {'Hello' : 'world'}
+    data = {'examples' : projects_data}
     return HttpResponse(template.render(data, request))
 
 def about_me(request):
