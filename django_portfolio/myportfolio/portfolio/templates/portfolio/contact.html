@@ -1,8 +1,14 @@
-{% extends "portfolio/base.html" %}
+{% extends "portfolio/base.html" %} {% block content %}
 
-
-{% block content %}
-
-<h1 style="color: black;">Contact</h1>
-
+<div id="container-main">
+  <h1>Feel Free to Message Me!</h1>
+  <div id="container-wrapper">
+    <form class="form">
+      <div class="title">Contact Me</div>
+      <input type="text" placeholder="Your email" class="input" />
+      <textarea placeholder="Your message"></textarea>
+      <button>Submit</button>
+    </form>
+  </div>
+</div>
 {% endblock %}

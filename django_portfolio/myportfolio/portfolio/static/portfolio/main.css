@@ -15,6 +15,7 @@ body {
 
 body {
   background-color: rgb(56, 52, 52);
+  font-family: sans-serif;
 }
 
 a,
@@ -48,10 +49,8 @@ li {
   flex-direction: row;
   flex-wrap: wrap;
   flex: 1;
-  /* background-color: #e07a5f; */
   justify-content: end;
   align-items: baseline;
-  /* border-radius: 5px; */
   gap: 0.3em;
   margin: 1rem;
 }
@@ -65,7 +64,6 @@ li {
   position: relative;
   gap: 0.2em;
   cursor: pointer;
-  /* border-radius: 4px; */
   transition: all 0.2s ease;
   font-size: large;
 }
@@ -145,7 +143,6 @@ li {
 
 #examples {
   display: flex; /* Use CSS Grid for layout */
-  /* grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); */
   flex-wrap: wrap;
   gap: 0.5rem; /* Space between images */
   justify-content: center;
@@ -156,6 +153,10 @@ li {
   border-style: groove;
   object-fit: cover;
   border-radius: 3%;
+}
+
+.box-img-example:hover {
+  scale: 1.03;
 }
 
 .img-example {
@@ -200,7 +201,6 @@ li {
 }
 
 /* ------------UIVERSE LEARN MORE------------ */
-/* From Uiverse.io by Saad3092003 */
 
 .center {
   display: flex;
@@ -320,6 +320,3 @@ button:hover .button-text {
 button:active .button-text {
   color: rgba(255, 255, 255, 0.459);
 }
-
-
-/* ---------------Projects Page--------------------- */

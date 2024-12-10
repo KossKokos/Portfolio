@@ -33,6 +33,7 @@ img_examples = [
     },
 ]
 
+
 projects_data = [
     {
         'url': 'https://res.cloudinary.com/dtg29idor/image/upload/v1733738120/car_plates_reader_cbgmgs.jpg',
@@ -295,8 +296,6 @@ plt.scatter(X_test_sample[4], X_test_sample[3], c=colors_list_pred)"""
         ]
     },
 ]
-
-
 
 
 qualifications = [

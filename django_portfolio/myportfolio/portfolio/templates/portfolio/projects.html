@@ -28,7 +28,17 @@
               >See On GitHub</a
             >
           </div>
-          <ul>
+          <div class="container-button">
+            <button class="button show-info" data-proj="{{proj.title}}">
+              <span class="button_lg" data-proj="{{proj.title}}">
+                <span class="button_sl" data-proj="{{proj.title}}"></span>
+                <span class="button_text" data-proj="{{proj.title}}"
+                  >Show Info</span
+                >
+              </span>
+            </button>
+          </div>
+          <ul class="hidden list-info" id="{{proj.title}}">
             <div class="container-analyze-step">
               {% for analyze_step in proj.description %}
 
@@ -40,9 +50,19 @@
                   class="line-numbers language-python"
                 ><code class="language-python">{{analyze_step.code_snippet}}</code></pre>
               </div>
-              {% endif %}
-              {% endfor %}
+              {% endif %} {% endfor %}
             </div>
+            <div class="container-button">
+              <button class="button hide-info" data-proj="{{proj.title}}">
+                <span class="button_lg" data-proj="{{proj.title}}">
+                  <span class="button_sl" data-proj="{{proj.title}}"></span>
+                  <span class="button_text" data-proj="{{proj.title}}"
+                    >Hide Info</span
+                  >
+                </span>
+              </button>
+            </div>
+
           </ul>
         </div>
         {% endfor %}

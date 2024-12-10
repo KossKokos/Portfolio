@@ -1,3 +1,7 @@
+#heading-message {
+  text-align: center;
+}
+
 #container-tables {
   padding-top: 2rem;
 }
@@ -46,4 +50,104 @@ tr:nth-of-type(2n) {
 .table-container {
   max-width: 100%;
   overflow-x: scroll;
+  margin-bottom: 2rem;
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skills p {
+  font-size: 1.09rem;
+}
+
+.skills {
+  width: 30rem;
+  background-color: hsl(0, 0%, 50%);
+  border-radius: 5%;
+  transition: all 0.2s ease;
+}
+
+.skills:hover {
+  background-color: hsl(0 0% 50% / 0.5);
+  scale: 1.05;
+}
+
+/* -----------------------------CONTACT PAGE-------------------------------- */
+.form {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  width: 20rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 5%;
+  box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+}
+
+.form .title {
+  color: royalblue;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form input {
+  outline: 0;
+  border: 1px solid rgb(219, 213, 213);
+  padding: 0.5rem 0.9rem;
+  border-radius: 3%;
+  width: 90%;
+  height: 50px;
+}
+
+.form textarea {
+  border-radius: 3%;
+  height: 100px;
+  width: 90%;
+  resize: none;
+  outline: 0;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid rgb(219, 213, 213);
+}
+
+.form button {
+  align-self: flex-end;
+  padding: 8px;
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: royalblue;
+  color: #fff;
+  cursor: pointer;
+}
+
+#container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container-wrapper:hover {
+  scale: 1.1;
+}
+
+#container-main h1 {
+  padding-top: 10rem;
+  text-align: center;
+}
+
+html {
+  overflow-y: scroll;
 }

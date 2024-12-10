@@ -1,10 +1,11 @@
-// const test_h1 = document.querySelector("h1");
+"use strict";
 
-// document.addEventListener('DOMContentLoaded', function () {
 const header = document.querySelector(".header");
 const nav = document.querySelector(".navigation");
 const navHeight = nav.getBoundingClientRect().height;
-// const showImageBtns = document.querySelectorAll('.show-image');
+const showInfoButtons = document.querySelectorAll(".show-info");
+const listInfo = document.querySelector(".list-info");
+const hideInfoButtons = document.querySelectorAll(".hide-info");
 
 const stickyNav = function (entries) {
   const [entry] = entries;
@@ -19,28 +20,23 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 });
 
 headerObserver.observe(header);
-// });
 
-// if (test_h1) {
-//   const test1Marging = 0.0625 * navHeight;
-//   test_h1.style.marginTop = `${test1Marging}rem`;
-// }
+const displayInfo = function (e) {
+  e.preventDefault();
+  const btn = e.target;
+  const objId = btn.dataset.proj;
+  const objToDisplay = document.querySelector(`#${objId}`);
+  objToDisplay.classList.remove("hidden");
+};
 
-// const openModal = function (e) {
-//   e.preventDefault();
-//   modal.classList.remove('hidden');
-//   overlay.classList.remove('hidden');
-// };
+const hideInfo = function (e) {
+  e.preventDefault();
+  const btn = e.target;
+  const objId = btn.dataset.proj;
+  const objToRemove = document.querySelector(`#${objId}`);
+  objToRemove.classList.add("hidden");
+};
 
-// const closeModal = function () {
-//   modal.classList.add('hidden');
-//   overlay.classList.add('hidden');
-// };
+showInfoButtons.forEach((btn) => btn.addEventListener("click", displayInfo));
 
-// btnsOpenModal.forEach(function (btn) {
-//   btn.addEventListener('click', openModal);
-// });
-
-// btnCloseModal.addEventListener('click', closeModal);
-
-// showImageBtns.addEventListener()
+hideInfoButtons.forEach((btn) => btn.addEventListener("click", hideInfo));
