@@ -1,0 +1,34 @@
+{% extends "portfolio/base.html" %} {% block content %}
+
+<div id="container-tables">
+  <h1 id="heading-qualifications">Qualifications</h1>
+  <div id="qualifications-container">
+    <div class="table-container">
+      <table>
+        <caption>
+          My Qualifications
+        </caption>
+        <tr class="headers">
+          <th class="header">Qualification</th>
+          <th class="header">Date Start</th>
+          <th class="header">Date Finish</th>
+          <th class="header">Grade</th>
+        </tr>
+        {% for qualification in qualifications %}
+        <tr class="row">
+          <td data-cell="Qualification" class="cell">{{qualification.name}}</td>
+          <td data-cell="Date Start" class="cell">
+            {{qualification.date_start}}
+          </td>
+          <td data-cell="Date Finish" class="cell">
+            {{qualification.date_finish}}
+          </td>
+          <td data-cell="Grade" class="cell">{{qualification.grade}}</td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

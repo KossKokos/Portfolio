@@ -20,6 +20,13 @@
             CSS, and JavaScript. My goal is to contribute to data-driven
             innovation and grow as a professional in the data science field.
           </p>
+          <div class="container-about-me-links">
+            <a href="{% url 'portfolio:qualifications' %}"
+              ><button class="menu__button">
+                <span>Check Out My Qualifications</span>
+              </button></a
+            >
+          </div>
         </div>
         <div class="skills">
           <p>
@@ -35,6 +42,13 @@
             leverage my combination of technical and interpersonal skills to
             contribute meaningfully to impactful projects.
           </p>
+          <div class="container-about-me-links">
+            <a href="{% url 'portfolio:experience' %}"
+              ><button class="menu__button">
+                <span>Check Out My Experience</span>
+              </button></a
+            >
+          </div>
         </div>
         <div class="skills">
           <p>
@@ -50,42 +64,17 @@
             as a Junior Data Scientist and grow alongside a dynamic team in a
             forward-thinking organization.
           </p>
+          <div class="container-about-me-links">
+            <a href="{% url 'portfolio:clients' %}"
+              ><button class="menu__button">
+                <span>Check Out My Clients</span>
+              </button></a
+            >
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <div id="container-tables">
-    <h1 id="heading-qualifications">Qualifications</h1>
-    <div id="qualifications-container">
-      <div class="table-container">
-        <table>
-          <caption>
-            My Qualifications
-          </caption>
-          <tr class="headers">
-            <th class="header">Qualification</th>
-            <th class="header">Date Start</th>
-            <th class="header">Date Finish</th>
-            <th class="header">Grade</th>
-          </tr>
-          {% for qualification in qualifications %}
-          <tr class="row">
-            <td data-cell="Qualification" class="cell">
-              {{qualification.name}}
-            </td>
-            <td data-cell="Date Start" class="cell">
-              {{qualification.date_start}}
-            </td>
-            <td data-cell="Date Finish" class="cell">
-              {{qualification.date_finish}}
-            </td>
-            <td data-cell="Grade" class="cell">{{qualification.grade}}</td>
-          </tr>
-          {% endfor %}
-        </table>
-      </div>
-    </div>
-  </div>
-</div>
 
-{% endblock %}
+  {% endblock %}
+</div>

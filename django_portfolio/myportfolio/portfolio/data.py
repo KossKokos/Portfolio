@@ -298,7 +298,7 @@ plt.scatter(X_test_sample[4], X_test_sample[3], c=colors_list_pred)"""
 ]
 
 
-qualifications = [
+table_qualifications = [
     {
         'name': 'ESOL Level 1',
         'date_start': '03/09/2022',
