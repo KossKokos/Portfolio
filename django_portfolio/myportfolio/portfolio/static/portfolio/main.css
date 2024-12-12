@@ -26,6 +26,9 @@ li {
   text-decoration: none;
   color: #f4f1de;
 }
+.header {
+  margin-bottom: 3rem;
+}
 
 /* Navigation  */
 .navigation {
