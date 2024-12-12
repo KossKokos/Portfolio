@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.template import loader
 
-from .data import img_examples, projects_data, table_qualifications
+from .data import img_examples, projects_data, table_qualifications, services_data
 
 
 def get_html_file(name):
@@ -23,7 +23,6 @@ def projects(request):
 
 def about_me(request):
     template = get_html_file('portfolio/about.html')
-    # data = {'qualifications' : qualifications}
     data = {'Hello' : 'world'}
     return HttpResponse(template.render(data, request))
 
@@ -42,7 +41,7 @@ def qualifications(request):
 
 def services(request):
     template = get_html_file('portfolio/services.html')
-    data = {'Hello' : 'world'}
+    data = {'services' : services_data}
     return HttpResponse(template.render(data, request))
 
 

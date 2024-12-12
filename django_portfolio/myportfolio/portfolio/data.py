@@ -349,3 +349,62 @@ table_qualifications = [
         'grade': 'In Progress'
     },
 ]
+
+
+services_data = [
+    {
+        'title': 'Regression:',
+        'url': 'https://res.cloudinary.com/dtg29idor/image/upload/v1733421788/ridge_ibbdxz.png',
+        'description': 
+                    """I have extensive experience building predictive models using various regression 
+                    techniques, such as linear, polynomial, and regularized regression (Ridge, Lasso). 
+                    These models are effective in predicting continuous outcomes, whether it’s 
+                    forecasting sales, predicting stock prices, or estimating real-world metrics 
+                    from historical data. By analyzing data trends and applying statistical methods, 
+                    I can create models that not only fit the data well but are also robust to overfitting, 
+                    ensuring high generalization performance.""" 
+    },
+
+    {
+        'title': 'Classification:',
+        'url': 'https://res.cloudinary.com/dtg29idor/image/upload/v1733421789/comparing_results_kcnu15.png',
+        'description': 
+                    """I have worked with a variety of classification algorithms, 
+                    such as Logistic Regression, Decision Trees, Random Forests, 
+                    Support Vector Machines (SVM), and Naive Bayes to solve problems 
+                    with categorical outcomes. From binary classification (like spam detection 
+                    or customer churn) to multi-class classification (such as classifying different 
+                    types of products or diseases), I understand how to select the most appropriate
+                    model, preprocess data, and evaluate model performance using metrics like 
+                    accuracy, precision, recall, and F1-score.""" 
+    },
+    
+    {
+        'title': 'Clustering:',
+        'url': 'https://res.cloudinary.com/dtg29idor/image/upload/v1733421788/clustering_aapydv.png',
+        'description': 
+                    """With a focus on unsupervised learning, I have applied clustering 
+                    algorithms like K-Means, DBSCAN, and Hierarchical Clustering to identify 
+                    patterns or groupings in data without labeled outcomes. This has been 
+                    particularly useful for segmenting customer data for targeted marketing 
+                    campaigns, grouping similar products for recommendation systems, or 
+                    identifying outliers in large datasets. I am also adept at visualizing 
+                    clusters and using dimensionality reduction techniques to make the results 
+                    more interpretable.""" 
+    },
+    {
+        'title': 'Deep Learning:',
+        'url': 'https://res.cloudinary.com/dtg29idor/image/upload/v1733421788/comparing_models_oqgrh7.png',
+        'description': 
+                    """I have hands-on experience in designing, training, and deploying 
+                    neural networks for a wide range of applications. I specialize 
+                    in Convolutional Neural Networks (CNNs) for image-related tasks 
+                    like image classification, object detection, and image segmentation. 
+                    I also have experience working with Recurrent Neural Networks 
+                    (RNNs), including LSTMs (Long Short-Term Memory) and GRUs (Gated Recurrent Units),
+                    for time-series data and sequential problems, such as predicting stock 
+                    prices or generating text. By utilizing frameworks like TensorFlow and 
+                    Keras, I am capable of creating complex, deep models to solve cutting-edge problems.
+""" 
+    },
+]

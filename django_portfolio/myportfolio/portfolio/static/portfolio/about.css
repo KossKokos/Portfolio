@@ -287,25 +287,42 @@ button {
 
 /* =========================SERVICES PAGE========================= */
 
+
 #container-serv {
-  display: flex;
-  justify-content: flex-start;
   gap: 2rem;
+  margin-top: 10rem;
+}
+
+.container-serv-inner {
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+  padding: 1rem;
 }
 
 .service-heading {
-  margin-left: 0;
+  margin-left: 3rem;
+}
+
+.service-heading h1 {
+  text-align: center;
 }
 
 .service-info {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 4rem;
-  width: 50rem;
+  width: 40rem;
 }
 
 .service-img {
   height: 300px;
   background-size: cover;
+  width: 100%;
+  border-radius: 4% 0 0 4%;
+}
+
+.service-paragraph {
+  width: 40rem;
+  background-color: rgb(94, 94, 94);
+  border-radius: 0 4% 4% 0;
 }
