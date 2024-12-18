@@ -10,6 +10,8 @@ def main():
     if 'runserver' in sys.argv:
         sys.argv.append(f'0.0.0.0:{port}')
 
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myportfolio.settings')
+    
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myportfolio.settings')
     try:
