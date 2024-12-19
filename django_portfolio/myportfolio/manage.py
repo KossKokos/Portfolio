@@ -5,12 +5,12 @@ import sys
 
 
 def main():
-    port = os.getenv('PORT', '8000')
+    # port = os.getenv('PORT', '8000')
 
-    if 'runserver' in sys.argv:
-        sys.argv.append(f'0.0.0.0:{port}')
+    # if 'runserver' in sys.argv:
+    #     sys.argv.append(f'0.0.0.0:{port}')
 
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myportfolio.settings')
+    # os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myportfolio.settings')
     
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myportfolio.settings')
