@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 from django.template import loader
+from django.core.mail import EmailMultiAlternatives
 
 from .data import img_examples, projects_data, table_qualifications, services_data
 
