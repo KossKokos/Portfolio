@@ -1,5 +1,13 @@
 img_examples = [
     {
+        'title': 'Appointment System',
+        'url': "https://res.cloudinary.com/dtg29idor/image/upload/v1746698788/unit_10_proj_pucud4.png"
+    },
+    {
+        'title': 'Tickets Management system',
+        'url': "https://res.cloudinary.com/dtg29idor/image/upload/v1746699174/unit_9_proj_hgfhpq.png"
+    },
+    {
         'title': 'Recurent Neural Network',
         'url': "https://res.cloudinary.com/dtg29idor/image/upload/v1733421788/blstm_training_uitdwd.png"
     },
@@ -352,6 +360,25 @@ table_qualifications = [
 
 
 services_data = [
+     {
+        'title': 'Surgery Appointment System:',
+        'url': 'https://res.cloudinary.com/dtg29idor/image/upload/v1746698788/unit_10_proj_pucud4.png',
+        'description': 
+                    """Doctor’s Surgery Appointment System & Relational Database Development
+                    Purpose: To create a secure, efficient, and user-friendly system for managing appointments and patient data in a doctor’s surgery.
+                    Key Features: Data entry forms for patients and appointments; Querying for specific appointment details; Automated report generation; Navigation between forms and reports; Exporting records to Excel; 
+                    Tools & Technologies Used: Microsoft Access – database creation, forms, queries, and reports; VBA (Visual Basic for Applications); Microsoft Excel; SQL (via Access queries) – data retrieval and manipulation; UI Design – basic user-friendly interface within Access
+                    Successfully delivered a working database system that meets user requirements for appointment tracking, improves productivity through automation, and ensures data accuracy and confidentiality.""" 
+    },
+    {
+        'title': 'Tickets Management system:',
+        'url': 'https://res.cloudinary.com/dtg29idor/image/upload/v1746699174/unit_9_proj_hgfhpq.png',
+        'description': 
+                    """Tickets Management system & Spreadsheet Development
+                    Developed a multi-sheet Excel spreadsheet for a football club to manage season-ticket holder information, with features for storing applicant data, auto-allocating seats, calculating revenue, and summarizing application statuses. Designed with strong user focus—clear input guidance, visual indicators, and secure, automated functionality.
+                    Tools Used: Microsoft Excel (with advanced features); VBA (Visual Basic for Applications) for automation; Data Validation (dropdown lists, input messages, error alerts); Functions & Formulas: COUNTIF, SUM, IF, SEARCH; Macros (auto seat assignment, input validation, and reset functions); Charts & Graphs (visual summary of tickets, statuses, and revenue)
+"""
+    },
     {
         'title': 'Regression:',
         'url': 'https://res.cloudinary.com/dtg29idor/image/upload/v1733421788/ridge_ibbdxz.png',
