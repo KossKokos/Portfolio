@@ -4,11 +4,23 @@ img_examples = [
         'url': "https://res.cloudinary.com/dtg29idor/image/upload/v1746698788/unit_10_proj_pucud4.png"
     },
     {
-        'title': 'Tickets Management system',
+        'title': 'Installing & Maintaining Hardware',
+        'url': "https://res.cloudinary.com/dtg29idor/image/upload/v1747226105/unit_14_proj_rlhlcc.jpg"
+    },
+    {
+        'title': 'Tickets Management System',
         'url': "https://res.cloudinary.com/dtg29idor/image/upload/v1746699174/unit_9_proj_hgfhpq.png"
     },
     {
-        'title': 'Recurent Neural Network',
+        'title': 'Ubiquitous Computing',
+        'url': "https://res.cloudinary.com/dtg29idor/image/upload/v1747225887/unit_1_proj_encbtp.png"
+    },
+    {
+        'title': 'Networking',
+        'url': "https://res.cloudinary.com/dtg29idor/image/upload/v1747225887/unit_2_proj_amjhyw.png"
+    },
+    {
+        'title': 'Recurrent  Neural Network',
         'url': "https://res.cloudinary.com/dtg29idor/image/upload/v1733421788/blstm_training_uitdwd.png"
     },
     {
@@ -361,7 +373,7 @@ table_qualifications = [
 
 services_data = [
      {
-        'title': 'Surgery Appointment System:',
+        'title': 'Microsoft Access:',
         'url': 'https://res.cloudinary.com/dtg29idor/image/upload/v1746698788/unit_10_proj_pucud4.png',
         'description': 
                     """Doctor’s Surgery Appointment System & Relational Database Development
@@ -371,7 +383,13 @@ services_data = [
                     Successfully delivered a working database system that meets user requirements for appointment tracking, improves productivity through automation, and ensures data accuracy and confidentiality.""" 
     },
     {
-        'title': 'Tickets Management system:',
+        'title': 'Installing & Maintaining Hardware:',
+        'url': 'https://res.cloudinary.com/dtg29idor/image/upload/v1747226105/unit_14_proj_rlhlcc.jpg',
+        'description': 
+                    """I gained practical experience in installing and maintaining computer hardware while studying at Lambeth Technical College, working alongside my classmates on various hands-on projects. We assembled and configured desktop systems by installing components such as CPUs, RAM, hard drives, motherboards, and power supplies. The tasks also included troubleshooting hardware faults, replacing damaged parts, and ensuring all components were correctly connected and functional. This collaborative environment helped me develop a solid understanding of computer hardware, improve my problem-solving skills, and learn the importance of precision and safety when handling sensitive equipment.""" 
+    },
+    {
+        'title': 'Spreadsheet Development:',
         'url': 'https://res.cloudinary.com/dtg29idor/image/upload/v1746699174/unit_9_proj_hgfhpq.png',
         'description': 
                     """Tickets Management system & Spreadsheet Development
